@@ -90,6 +90,19 @@ git fetch --prune
 
 ## Worktree
 
-```bash
-git worktree add -b chore/514-init ../projectwt/514-init
-```
+### Create a new worktree for a feature/bug
+git worktree add ../feature-xyz -b feature/xyz
+
+### List all active worktrees
+git worktree list
+
+### Remove a worktree after the branch is merged
+git worktree remove ../feature-xyz
+
+### Stash if you need to (within a worktree)
+git stash
+git stash list
+git stash pop
+
+### Push a new branch upstream
+git push --set-upstream origin feature/xyz
